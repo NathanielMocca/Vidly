@@ -10,10 +10,10 @@ namespace Vidly.Controllers
 {
     public class MoviesController : Controller
     {
-        private List<Customer> tstCustomers = new List<Customer>
+        private List<Customers> tstCustomers = new List<Customers>
         {
-            new Customer {Name = "John Smith", Id=1 },
-            new Customer {Name = "Mary Williams", Id=2 }
+            new Customers {Name = "John Smith", Id=1 },
+            new Customers {Name = "Mary Williams", Id=2 }
         };
 
         private List<Movie> tstMovies = new List<Movie>
@@ -25,10 +25,10 @@ namespace Vidly.Controllers
         public ActionResult Random()
         {
             var movie = new Movie() { Name = "Sherk!" };
-            var customers = new List<Customer>
+            var customers = new List<Customers>
             {
-                new Customer {Name = "Customer 1" },
-                new Customer {Name = "Customer 2" }
+                new Customers {Name = "Customer 1" },
+                new Customers {Name = "Customer 2" }
             };
 
             var viewModel = new RandomMovieViewModel
